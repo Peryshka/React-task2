@@ -1,5 +1,5 @@
 * {
-  box-sizing:border-box ;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -68,3 +68,25 @@ body {
   border: 1px solid aquamarine;
   color: white;
 }
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainTitle {
+  width: 300px;
+}
+
+.deleteBtn {
+  width: 120px;
+  border-radius: 10px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 12px;
+  background-color: aquamarine;
+  border: 1px solid aquamarine;
+  color: white;
+}
+
+
