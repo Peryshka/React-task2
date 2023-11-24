@@ -24,7 +24,7 @@ body {
   align-items: center;
   background-color: antiquewhite;
   padding: 30px;
-  opacity : 0.7;
+  opacity: 0.7;
 }
 
 .input {
@@ -46,3 +46,4 @@ body {
   width: 200px;
   height: 200px;
 }
+

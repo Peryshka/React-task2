@@ -43,45 +43,47 @@ function App() {
     }
     setData((data) => [...data, newData]);
     setNewTitle('');
-    console.log(data);
   }
 
   function handleDelete(id) {
     setData(data.filter(post => post.id !== id))
   }
+
   //End of Handle functions for events
   //Rendering Info
   return (
-      <div className='container'>
-        <div className='wrap'>
-          <div className="form">
-            <label className="label">
-              Enter cosmetic:
-              <input value={newTitle}
-                     type="text"
-                     placeholder="Enter cosmetic brand"
-                     className="input"
+    <div className='container'>
+      <div className='wrap'>
+        <div className="form">
+          <label className="label">
+            Enter cosmetic:
+            <input value={newTitle}
+                   type="text"
+                   placeholder="Enter cosmetic brand"
+                   className="input"
 
-                     onChange={handleTitleChange}
-              />
-            </label>
-            <button className="addBtn" onClick={handleAddPost}>Add</button>
-          </div>
-          {data.map((item) => {
-            return (
-
-              <InfoList
-                key={item.id}
-                title={item.title}
-                body={item.body}
-                onClick={() => handleDelete(item.id)}
-              />
-            )
-          })}
+                   onChange={handleTitleChange}
+            />
+          </label>
+          <button className="addBtn" onClick={handleAddPost}>Add</button>
         </div>
+        {data.map((item) => {
+          return (
+
+            <InfoList
+              key={item.id}
+              title={item.title}
+              body={item.body}
+              onClick={() => handleDelete(item.id)}
+            />
+          )
+        })}
       </div>
+    </div>
   );
 }
+
 //The end of Rendering Info
 
 export default App;
+
