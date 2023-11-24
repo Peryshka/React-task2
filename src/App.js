@@ -1,5 +1,4 @@
 import {useState} from 'react';
-import InfoList from "./components/info-list";
 import styles from './components/info-list/style.module.css';
 import styled from './components/info-list/style.module.css';
 import form from './components/info-list/style.module.css';
@@ -34,26 +33,16 @@ function App() {
 
   function handleAddPost() {
     const newData = {
-      id: Math.round(Math.random(5) * 20), title: newTitle,
+      id: Math.round(Math.random() * 100), title: newTitle,
     }
     setData((data) => [...data, newData]);
     setNewTitle('');
-    console.log(data);
   }
 
   //End of Handle functions for events
   //Render Info
   return (<div className={styles["container"]}>
     <div className={wrap2['wrap2']}>
-      {/*{DATA.map((item) => {*/}
-      {/*  return (*/}
-      {/*    <InfoList*/}
-      {/*      key={item.id}*/}
-      {/*      title={item.title}*/}
-      {/*      body={item.body}*/}
-      {/*    />*/}
-      {/*  )*/}
-      {/*})}*/}
       <div className={form['form']}>
         <label className={label['label']}>
           Enter New Post:
