@@ -1,3 +1,70 @@
-.wrap {
+* {
+  box-sizing:border-box ;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Calisto MT";
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+.container {
+  margin: 0 auto;
+  width: 700px;
+  background-color: aliceblue;
+}
+
+.wrap2 {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.list {
+  list-style-type: none;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.input {
+  margin-left: 20px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid white;
+  outline: none;
+}
+
+.input:focus {
+  border: none;
+}
+
+.btn {
+  margin-top: 5px;
+  margin-left: 20px;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
   background-color: aquamarine;
+  border: 1px solid aquamarine;
+  color: white;
 }
