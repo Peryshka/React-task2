@@ -1,92 +1,28 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Calisto MT";
-  font-size: 18px;
-  line-height: 50px;
-  font-weight: 500;
-}
-
-.container {
-  margin: 0 auto;
-  width: 700px;
-  background-color: aliceblue;
-}
-
-.wrap2 {
-  margin-top: 50px;
+.wrap {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
+  list-style-type: none;
 }
 
 .list {
-  list-style-type: none;
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.form {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.label {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.input {
-  margin-left: 20px;
-  height: 40px;
+  border: 1px solid black;
   border-radius: 10px;
-  border: 1px solid white;
-  outline: none;
-}
-
-.input:focus {
-  border: none;
-}
-
-.btn {
-  margin-top: 5px;
-  margin-left: 20px;
-  width: 100px;
-  height: 40px;
-  border-radius: 10px;
-  background-color: aquamarine;
-  border: 1px solid aquamarine;
-  color: white;
-}
-
-.listItem {
   display: flex;
   justify-content: space-between;
-}
-
-.mainTitle {
-  width: 300px;
+  align-items: center;
+  padding: 10px;
+  margin-top: 30px;
+  width: 400px;
+  background-color: white;
+  border: 1px solid aquamarine;
 }
 
 .deleteBtn {
-  width: 120px;
+  width: 100px;
+  height: 40px;
   border-radius: 10px;
-  height: 30px;
   margin-left: 20px;
-  margin-top: 12px;
   background-color: aquamarine;
-  border: 1px solid aquamarine;
-  color: white;
+  border: 1px solid white;
+  font-weight: 600;
+  font-size: 16px;
 }
-
-
