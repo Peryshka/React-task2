@@ -1,19 +1,22 @@
 .wrap {
   display: flex;
   list-style-type: none;
+  opacity:1;
 }
 
 .list {
   border: 1px solid black;
   border-radius: 10px;
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   margin-top: 30px;
   width: 400px;
-  background-color: white;
-  border: 1px solid aquamarine;
+  background-color: darkcyan;
+  border: 2px solid aquamarine;
+  color: white;
 }
 
 .deleteBtn {

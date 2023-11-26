@@ -8,23 +8,23 @@ body {
   font-size: 18px;
   font-family: "Calisto MT";
   font-weight: 400;
-  background: peachpuff;
+  position: relative;
 }
 
 .container {
   margin: 0 auto;
   width: 600px;
+  opacity: 0.9;
 }
 
 .wrap {
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: antiquewhite;
   padding: 30px;
-  opacity: 0.7;
+  opacity:0.8;
 }
 
 .input {
@@ -47,3 +47,12 @@ body {
   height: 200px;
 }
 
+.nightMode{
+  display: block;
+  background: url('./img/night.jpeg') center center/cover no-repeat;
+}
+
+.dayMode{
+  display: block;
+  background: url('./img/day2.jpeg') center center/cover no-repeat;
+}

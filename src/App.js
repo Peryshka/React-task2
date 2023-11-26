@@ -30,6 +30,10 @@ function App() {
   //All states
   const [data, setData] = useState(DATA);
   const [newTitle, setNewTitle] = useState('');
+  const [isNight, setIsNight] = useState(false);
+  function handleNightTheme() {
+    setIsNight(!isNight);
+  }
   //The end of all states
   //Handle functions for events
   function handleTitleChange(e) {
@@ -53,7 +57,7 @@ function App() {
   //End of Handle functions for events
   //Rendering Info
   return (
-    <div className='container'>
+    <div className={`'container' ${isNight? 'nightMode' : ' dayMode' } `}>
       <div className='wrap'>
         <div className="form">
           <label className="label">
@@ -67,7 +71,10 @@ function App() {
           </label>
           <button className="addBtn" onClick={handleAddPost}>Add</button>
         </div>
-        <ToggleSwitchChangeBg />
+        <ToggleSwitchChangeBg
+        onChange={handleNightTheme}
+        value={isNight}
+        />
         {data.map((item) => {
           return (
             <InfoList
