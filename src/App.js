@@ -1,7 +1,9 @@
 import './App.css';
+import './App.module.css';
 import InfoList from "./components/info-list";
 import {useState} from 'react';
 import ToggleSwitchChangeBg from "./components/ToggleSwitchChangeBg";
+import styled from './App.module.css';
 
 const DATA = [
   {
@@ -22,6 +24,11 @@ const DATA = [
   {
     id: 4,
     title: 'SkinCare',
+    body: 'lorem lorem lorem lorem'
+  },
+  {
+    id: 5,
+    title: 'Zenzia',
     body: 'lorem lorem lorem lorem'
   }
 ];
@@ -57,19 +64,19 @@ function App() {
   //End of Handle functions for events
   //Rendering Info
   return (
-    <div className={`'container' ${isNight? 'nightMode' : ' dayMode' } `}>
-      <div className='wrap'>
+    <div className={`'container ${isNight ? 'nightMode' : 'dayMode'}`}>
+      <div className={styled.wrap}>
         <div className="form">
           <label className="label">
             Enter cosmetic:
             <input value={newTitle}
                    type="text"
                    placeholder="Enter cosmetic brand"
-                   className="input"
+                   className={styled.input}
                    onChange={handleTitleChange}
             />
           </label>
-          <button className="addBtn" onClick={handleAddPost}>Add</button>
+          <button className={styled.addBtn} onClick={handleAddPost}>Add</button>
         </div>
         <ToggleSwitchChangeBg
         onChange={handleNightTheme}

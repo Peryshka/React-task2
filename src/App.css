@@ -17,36 +17,6 @@ body {
   opacity: 0.9;
 }
 
-.wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: antiquewhite;
-  padding: 30px;
-  opacity:0.8;
-}
-
-.input {
-  margin-left: 20px;
-  width: 220px;
-  height: 50px;
-  border-radius: 10px;
-}
-
-.addBtn {
-  width: 120px;
-  height: 50px;
-  border-radius: 10px;
-  margin-left: 20px;
-  font-weight: 600;
-}
-
-.flower {
-  width: 200px;
-  height: 200px;
-}
-
 .nightMode{
   display: block;
   background: url('./img/night.jpeg') center center/cover no-repeat;
