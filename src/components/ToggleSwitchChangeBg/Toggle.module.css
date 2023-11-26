@@ -1,0 +1,107 @@
+.wrapToggle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 34px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+/* Hide default HTML checkbox */
+.inp {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+  background: url('../../img/day1.jpeg');
+  background-size: cover;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.inp:checked + .slider {
+  background: url('../../img/night.jpeg');
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.inp:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+  border-radius: 20px;
+}
+
+.inp:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider {
+  border-radius: 34px;
+}
+
+.slider:before {
+  border-radius: 50%;
+}
+
+.toggleImg {
+  display: block;
+  background: url('../../img/day1.jpeg') center center/contain no-repeat;
+  width: 60px;
+  height: 34px;
+}
+
+.nightMode {
+  display: block;
+  position: absolute;
+  background: url('../../img/night.jpeg') center center/contain no-repeat;
+  z-index: 2;
+}
+
+.dayMode {
+  display: block;
+  position: absolute;
+  background: url('../../img/day1.jpeg') center center/contain no-repeat;
+  z-index: -1;
+  opacity: 0.2;
+
+}
+
+
+
+
+
+
+
+

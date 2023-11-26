@@ -1,6 +1,7 @@
 import './App.css';
 import InfoList from "./components/info-list";
 import {useState} from 'react';
+import ToggleSwitchChangeBg from "./components/ToggleSwitchChangeBg";
 
 const DATA = [
   {
@@ -61,15 +62,14 @@ function App() {
                    type="text"
                    placeholder="Enter cosmetic brand"
                    className="input"
-
                    onChange={handleTitleChange}
             />
           </label>
           <button className="addBtn" onClick={handleAddPost}>Add</button>
         </div>
+        <ToggleSwitchChangeBg />
         {data.map((item) => {
           return (
-
             <InfoList
               key={item.id}
               title={item.title}
